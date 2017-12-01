@@ -22,13 +22,13 @@ function partTwo(input) {
   let sum = 0;
 
   inputArray.forEach((currVal, currIndex, arr) => {
-  let halfWay = arr.length / 2;
+    let halfWay = arr.length / 2;
 
-  if(arr[currIndex] === arr[currIndex + halfWay]){
-    sum += parseInt(currVal);
-  } else if(arr[currIndex] === arr[currIndex - halfWay]) {
-    sum += parseInt(currVal);
-  }
+    if(arr[currIndex] === arr[currIndex + halfWay]){
+      sum += parseInt(currVal);
+    } else if(arr[currIndex] === arr[currIndex - halfWay]) {
+      sum += parseInt(currVal);
+    }
 
   });
   console.log(sum);
