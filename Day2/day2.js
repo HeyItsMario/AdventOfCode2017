@@ -33,11 +33,9 @@ fs.readFile('./input.txt', (err,data) => {
 });
 
 var sum = 0;
-
 data.forEach(set => {
   set.sort((a,b) => a - b);
 })
-
 data.forEach(set => {
   let size = set.length;
   for(let i = 0; i < size; i++){
